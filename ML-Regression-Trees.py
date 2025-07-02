@@ -1,6 +1,6 @@
 # Regression Trees
 
-# In this lab you will learn how to implement regression trees using ScikitLearn. 
+# We will learn how to implement regression trees using ScikitLearn. 
 # We will show what parameters are important, how to train a regression tree, and finally how to determine our regression trees accuracy.
 
 
@@ -49,7 +49,6 @@ LSTAT: Percent lower status of the population
 MEDV: Median value of owner-occupied homes in $1000s
 '''
 
-
 data = pd.read_csv(url)
 print(data.head(7))
 
@@ -78,6 +77,8 @@ X = data.drop(columns=["MEDV"])
 Y = data["MEDV"]
 X.head()
 Y.head()
+
+
 
 # Finally lets split our data into a training and testing dataset using train_test_split from sklearn.model_selection
 
