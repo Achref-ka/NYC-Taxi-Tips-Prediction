@@ -1,11 +1,14 @@
+# Regression Trees
+
+
 '''
 Taxi Tip Prediction using Scikit-Learn and Snap ML
-Estimated time needed: 30 minutes
 
-In this exercise session you will consolidate your machine learning (ML) modeling skills by using a popular regression model: Decision Tree. 
-You will use a real dataset to train such a model. The dataset includes information about taxi tip and was collected and provided to the NYC Taxi and 
+
+We will consolidate your machine learning (ML) modeling skills by using a popular regression model: Decision Tree. 
+We will use a real dataset to train such a model. The dataset includes information about taxi tip and was collected and provided to the NYC Taxi and 
 Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). 
-You will use the trained model to predict the amount of tip paid.
+We will use the trained model to predict the amount of tip paid.
 
 Objectives:
 
@@ -47,6 +50,7 @@ print("There are: " + str(len(raw_data.columns)) + " variables in the dataset.")
 
 # display first rows in the dataset
 print(raw_data.head(8))
+
 
 
 # Each row in the dataset represents a taxi trip. As shown above, each row has 18 variables. 
@@ -237,41 +241,5 @@ pred = tree.predict(X_test)
 print("MSE: ", mean_squared_error(y_test, pred))
 
 # We learned that increasing the max_depth parameter to 12 increases the MSE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
